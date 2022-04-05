@@ -7,7 +7,7 @@ User selects output folder
 import fitz # For PDF to PNG conversion
 from PyPDF2 import PdfFileReader # To count number of pages
 from tkinter.filedialog import askopenfilename # Simple user file selector
-from tkinter.filedialog import askdirectory # Simple user folder selector
+from tkinter.filedialog import askdirectory # Simple user directory selector
 
 filename = askopenfilename()
 pdf = PdfFileReader(open(filename,'rb'))
