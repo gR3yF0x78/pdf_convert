@@ -4,10 +4,10 @@ User selects PDF file to convert
 User selects output folder
 '''
 
-import fitz
-from PyPDF2 import PdfFileReader
-from tkinter.filedialog import askopenfilename
-from tkinter.filedialog import askdirectory
+import fitz # For PDF to PNG conversion
+from PyPDF2 import PdfFileReader # To count number of pages
+from tkinter.filedialog import askopenfilename # Simple user file selector
+from tkinter.filedialog import askdirectory # Simple user folder selector
 
 filename = askopenfilename()
 pdf = PdfFileReader(open(filename,'rb'))
