@@ -35,6 +35,9 @@ def convert_pdf():
         pix.save(output)
         count += 1
 
+'''
+GUI toolkit Python interface to Tcl/Tk
+'''
 r = tk.Tk()
 r.title("PDF to PNG Convertor by Simon Parker")
 r.geometry("400x300+10+10")
