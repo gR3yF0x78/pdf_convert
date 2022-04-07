@@ -1,5 +1,6 @@
 '''
 PDF to PNG - SP - 03/04/2022
+User system dependincies must be installed
 User selects PDF file to convert
 User selects output folder
 '''
