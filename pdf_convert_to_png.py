@@ -19,7 +19,7 @@ def get_file_name():
     global filename
     filename = askopenfilename()
 
-def get_combine_pdf_names():
+def get_pdf_names_to_combine():
     global file_tuple
     file_tuple = askopenfilenames()
     print(file_tuple)
@@ -56,9 +56,9 @@ GUI toolkit Python interface to Tcl/Tk
 r = tk.Tk()
 r.title("PDF to PNG Convertor by Simon Parker")
 r.geometry("400x425+10+10")
-r['background']='#222222'
+r['background']='#002828'
 button1 = tk.Button(r, text='Select Output Folder', width=25, pady= 10, padx= 10, command=get_output_directory)
-button2 = tk.Button(r, text='Select PDF to Combine', width=25, pady= 10, padx= 10, command=get_combine_pdf_names)
+button2 = tk.Button(r, text='Select PDF to Combine', width=25, pady= 10, padx= 10, command=get_pdf_names_to_combine)
 button3 = tk.Button(r, text='Add PDF', width=25, pady= 10, padx= 10, command=get_file_name)
 button4 = tk.Button(r, text='Combine!', width=25, pady= 10, padx= 10, command=combine_pdf)
 button5 = tk.Button(r, text='Convert!', width=25, pady= 10, padx= 10, command=convert_pdf)
