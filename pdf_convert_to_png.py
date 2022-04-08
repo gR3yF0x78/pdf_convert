@@ -45,8 +45,8 @@ def convert_pdf():
     doc = fitz.open(pdffile)
     count = 0
 
-    while count < number_of_pages:   
-        page = doc.load_page(count)  # number of page
+    while count < number_of_pages: # Always less than (and not equal to) as zero based  
+        page = doc.load_page(count) # number of page
         pix = page.get_pixmap()
         output = f"{output_location}/_page_{count}.png"
         pix.save(output)
