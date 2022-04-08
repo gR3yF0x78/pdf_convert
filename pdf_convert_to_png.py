@@ -56,7 +56,7 @@ GUI toolkit Python interface to Tcl/Tk
 r = tk.Tk()
 r.title("PDF to PNG Convertor by Simon Parker")
 r.geometry("400x425+10+10")
-r['background']='#666666'
+r['background']='#222222'
 button1 = tk.Button(r, text='Select Output Folder', width=25, pady= 10, padx= 10, command=get_output_directory)
 button2 = tk.Button(r, text='Select PDF to Combine', width=25, pady= 10, padx= 10, command=get_combine_pdf_names)
 button3 = tk.Button(r, text='Add PDF', width=25, pady= 10, padx= 10, command=get_file_name)
