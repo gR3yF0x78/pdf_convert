@@ -1,6 +1,7 @@
 '''
 PDF to PNG - SP - 03/04/2022
 User system dependencies must be installed.
+PyMuPDF, PyPDF2 (4), Fitz can be installed using pip
 '''
 
 import fitz # For PDF to PNG conversion
